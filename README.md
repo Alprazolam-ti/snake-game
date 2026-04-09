@@ -3,7 +3,7 @@
 The snake game on PIXI.js 
 Modes: Classic, God, Portal, Walls, Speed.  
 
-## Запуск
+## launch
 1. Clore rep:
 ```bash
 git clone https://github.com/твой_аккаунт/snake-game.git
