@@ -1,0 +1,112 @@
+/* Общие стили */
+#main {
+    display: flex;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#game-container {
+    width: 900px;
+    height: 900px;
+    flex-shrink: 0;
+}
+
+/* GUI панель */
+/* GUI панель */
+#gui {
+    width: 380px;
+    background-color: #32a499;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+    height: 900px;
+}
+
+/* Заголовок */
+#gui h1 {
+    margin: 0;
+    padding: 40px 0;
+    font-size: 42px;
+    text-align: center;
+    color: #b7ff7f;
+}
+
+/* Score/Best */
+#scores {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+
+#scores div {
+    padding: 10px 0;
+    font-size: 30px;
+    text-align: left;
+    background-color: rgba(0,0,0,0.2);
+    margin: 0;
+}
+
+/* Режимы */
+#modes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#modes label {
+    display: flex;
+    align-items: center;
+    gap:  10px;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px 0;
+    background-color: rgb(39, 98, 87);
+}
+
+#modes input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+#modes input[type="radio"]:checked {
+    background-color: #fff;
+}
+
+/* Контейнер всех кнопок внизу */
+#buttons-wrapper {
+    display: flex;
+    justify-content: center; /* центрируем все кнопки */
+    gap: 20px;               /* равные отступы между кнопками */
+    margin-top: auto;         /* отталкивает контейнер вниз */
+    margin-bottom: 20px;      /* отступ от низа GUI */
+}
+
+/* Стиль всех кнопок Play/Exit/Menu */
+#buttons-wrapper button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(20,80,70); /* темно-бирюзовый */
+    color: #fff;
+    border-radius: 0;                 /* без закруглений */
+    transition: background 0.2s;
+}
+
+#buttons-wrapper button:hover {
+    background-color: rgb(0,120,110); /* чуть светлее при наведении */
+}

@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="game-container"></div>
+
+        <div id="gui">
+            <h1>Snake Game</h1>
+
+            <div id="scores">
+                <div id="best">Best : <span id="best-score">0</span></div>
+                <div id="score">Score : <span id="current-score">0</span></div>
+            </div>
+
+            <div id="modes">
+                <label><input type="radio" name="mode" value="Classic" checked> Classic</label>
+                <label><input type="radio" name="mode" value="God"> God mode</label>
+                <label><input type="radio" name="mode" value="Walls"> Walls</label>
+                <label><input type="radio" name="mode" value="Portal"> Portal</label>
+                <label><input type="radio" name="mode" value="Speed"> Speed</label>
+            </div>
+
+            <div id="buttons-wrapper">
+                <button id="play-btn">Play</button>
+                <button id="exit-btn">Exit</button>
+                <button id="menu-btn" style="display:none;">Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/pixi.js/dist/pixi.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
